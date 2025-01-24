@@ -43,7 +43,7 @@ class TaskController extends Controller
     public function edit($id)
     {
         $task = Task::find($id);
-        return view('memos.edit', ['task' => $task]);
+        return view('tasks.edit', ['task' => $task]);
     }
 
     public function update(TaskRequest $request, $id)

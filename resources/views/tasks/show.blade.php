@@ -10,12 +10,12 @@
 </head>
 
 <body>
-    <a href="{{ route('tasks.index') }}">戻る</a>
     <h1>タスク詳細</h1>
-    <p>【タイトル】</p>
-    <p>{{ $task->title }}</p>
-    <p>【内容】</p>
-    <p>{!! nl2br(e($task->body)) !!}</p>
+    <div>【タイトル】</div>
+    <div class="space">{{ $task->title }}</div>
+
+    <div>【内容】</div>
+    <div class="space">{!! nl2br(e($task->body)) !!}</div>
 
     <div class="button-group">
         <button onclick='location.href="{{ route('tasks.index') }}"'>一覧へ戻る</button>
@@ -28,7 +28,4 @@
     </div>
 </body>
 </html>
-
-
-spartacamp
 

@@ -48,10 +48,10 @@
         </p>
         <p>
             <label for="body">本文<label><br>
-                    <textarea name="body" class="body" id="body">{{ old('body') }}</textarea>
+            <textarea name="body" class="body" id="body">{{ old('body') }}</textarea>
         </p>
 
-        <button onclick='location.href="{{ route("tasks.create") }}"'>Create Task</button>
+        <input type="submit" value="Create Task" onclick='location.href="{{ route('tasks.create') }}"'>
     </form>
 </body>
 
