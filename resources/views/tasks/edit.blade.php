@@ -40,9 +40,8 @@
 
         <div class="space">
             <input type="submit" value="更新">
+            <button onclick='location.href="{{ route('tasks.show', $task) }}"'>詳細に戻る</button>
         </div>
     </form>
 </body>
-<button onclick='location.href="{{ route('tasks.show', $task) }}"'>詳細に戻る</button>
-
 </html>
