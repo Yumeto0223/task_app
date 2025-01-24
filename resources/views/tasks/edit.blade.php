@@ -38,7 +38,9 @@
         </p>
 
         <input type="submit" value="更新">
-        <input type="submit" value="詳細に戻る" onclick='location.href="{{ route('tasks.show', $task) }}"'>
+        <a href="{{ route('tasks.show', $task) }}">
+            <button type="button">詳細に戻る</button>
+        </a>
     </form>
 </body>
 
