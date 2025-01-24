@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>memo edit</title>
+    <title>task edit</title>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 
@@ -37,11 +37,12 @@
             <textarea name="body" class="body" id="body">{{ old('body', $task->body) }}</textarea>
         </p>
 
+
         <div class="space">
             <input type="submit" value="更新">
-            <button type="button" onclick='location.href="{{ route('tasks.show', $task) }}"'>詳細に戻る</button>
         </div>
     </form>
 </body>
+<button onclick='location.href="{{ route('tasks.show', $task) }}"'>詳細に戻る</button>
 
 </html>
